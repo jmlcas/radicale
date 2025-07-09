@@ -1,0 +1,10 @@
+services:
+
+  radicale:
+    image: cupcakearmy/radicale:latest
+    container_name: radicale
+    restart: unless-stopped
+    volumes:
+      - ./data:/data
+    ports:
+      - "5232:5232"
